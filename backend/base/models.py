@@ -35,4 +35,4 @@ class Order(models.Model):
     valuePaid = models.DecimalField(max_digits=7, decimal_places=2, null=True, blank=True)
 
     def __str__(self):
-        return ('{} - {}'.format(self.Customer.name, self.createdAt))
+        return ('{} - {}'.format(self.customer.name, self.createdAt))

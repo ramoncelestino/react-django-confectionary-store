@@ -19,5 +19,6 @@ from base import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/customers/', views.customers)
+    path('api/customers/', views.customers),
+    path('api/orders/', views.orders)
 ]
